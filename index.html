@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Imran Haider — E-Commerce Growth Specialist</title>
+<title>Imran Haider — Web Developer &amp; E-Commerce Growth Specialist</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -37,10 +37,8 @@ body{
 a{color:inherit;}
 :focus-visible{outline:2px solid var(--stamp);outline-offset:3px;}
 
-/* MONO / LABEL UTILITY */
 .mono{font-family:'IBM Plex Mono',monospace;}
 
-/* LOADER */
 #loader{position:fixed;inset:0;background:var(--paper);z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .6s,visibility .6s;}
 #loader.hide{opacity:0;visibility:hidden;}
 .ld-mark{font-family:'Archivo Black',sans-serif;font-size:1.6rem;letter-spacing:.02em;margin-bottom:1.1rem;}
@@ -48,10 +46,8 @@ a{color:inherit;}
 @keyframes ldspin{to{transform:rotate(360deg);}}
 .ld-txt{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);}
 
-/* PROGRESS */
 #progress{position:fixed;top:0;left:0;height:3px;background:var(--stamp);z-index:600;width:0;transition:width .1s;}
 
-/* NAV */
 nav{position:fixed;top:0;width:100%;z-index:500;background:var(--paper3);border-bottom:1px solid var(--ink);}
 .nav-inner{max-width:1140px;margin:auto;padding:.85rem 1.75rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;}
 .logo{font-family:'Archivo Black',sans-serif;font-size:1rem;letter-spacing:.02em;cursor:pointer;display:flex;align-items:center;gap:.5rem;}
@@ -63,7 +59,6 @@ nav{position:fixed;top:0;width:100%;z-index:500;background:var(--paper3);border-
 .hire-pill{background:var(--ink);color:var(--paper3);padding:.5rem 1.2rem;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border:none;cursor:pointer;transition:.25s;font-family:'IBM Plex Mono',monospace;}
 .hire-pill:hover{background:var(--stamp);}
 
-/* HERO — SHIPPING LABEL */
 #hero{padding:7rem 1.75rem 3rem;max-width:1140px;margin:auto;}
 .label-card{border:2px solid var(--ink);background:var(--paper3);position:relative;}
 .label-top{display:flex;justify-content:space-between;align-items:center;padding:.85rem 1.4rem;border-bottom:2px dashed var(--ink-faint);flex-wrap:wrap;gap:.6rem;}
@@ -86,6 +81,7 @@ nav{position:fixed;top:0;width:100%;z-index:500;background:var(--paper3);border-
 .hero-name em{font-style:normal;color:var(--stamp);}
 .contents-lbl{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin:1.3rem 0 .4rem;}
 .contents-val{font-size:.92rem;font-weight:600;color:var(--ink-soft);line-height:1.7;}
+.contents-val b{color:var(--stamp);}
 
 .hero-btns{display:flex;gap:.9rem;flex-wrap:wrap;margin-top:1.8rem;}
 .btn-stamp{background:var(--stamp);color:var(--paper3);padding:.75rem 1.6rem;font-weight:700;font-size:.8rem;text-decoration:none;display:inline-block;transition:.25s;letter-spacing:.03em;border:2px solid var(--stamp);}
@@ -106,14 +102,12 @@ nav{position:fixed;top:0;width:100%;z-index:500;background:var(--paper3);border-
 .pstamp{border:1.5px dashed var(--ink-faint);border-radius:50%;width:52px;height:52px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;transform:rotate(-8deg);color:var(--ink-soft);flex-shrink:0;background:rgba(255,255,255,.35);}
 .handle-care{margin-top:auto;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--stamp);font-weight:700;border-top:2px dashed var(--ink-faint);padding-top:1rem;text-align:center;}
 
-/* TICKER */
 .ticker-wrap{overflow:hidden;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);padding:.65rem 0;background:var(--paper2);position:relative;z-index:10;}
-.ticker{display:flex;gap:2.5rem;animation:tick 22s linear infinite;width:max-content;}
+.ticker{display:flex;gap:2.5rem;animation:tick 26s linear infinite;width:max-content;}
 .ticker-item{display:flex;align-items:center;gap:.5rem;font-size:.76rem;font-weight:600;white-space:nowrap;font-family:'IBM Plex Mono',monospace;color:var(--ink-soft);}
 .ticker-item b{color:var(--stamp);}
 @keyframes tick{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 
-/* SECTIONS */
 .sec{padding:5rem 1.75rem;position:relative;z-index:10;}
 .wrap{max-width:1140px;margin:auto;}
 .sec-head{margin-bottom:2.6rem;}
@@ -122,7 +116,16 @@ nav{position:fixed;top:0;width:100%;z-index:500;background:var(--paper3);border-
 .sec-title{font-family:'Archivo Black',sans-serif;font-size:1.9rem;line-height:1.15;}
 .sec-sub{color:var(--ink-soft);font-size:.86rem;margin-top:.4rem;max-width:500px;}
 
-/* LEDGER (REVENUE) */
+/* WEB DEV SERVICES (NEW) */
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.4rem;}
+.svc{background:var(--paper3);border:1.5px solid var(--ink);padding:1.7rem 1.5rem;position:relative;transition:.3s;}
+.svc:hover{border-color:var(--stamp);transform:translateY(-4px);}
+.svc-no{font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.12em;color:var(--stamp);font-weight:700;margin-bottom:.8rem;}
+.svc h3{font-family:'Archivo Black',sans-serif;font-size:1.05rem;margin-bottom:.55rem;line-height:1.25;}
+.svc p{font-size:.82rem;color:var(--ink-soft);line-height:1.65;}
+.svc-cta{margin-top:2rem;display:flex;gap:.9rem;flex-wrap:wrap;align-items:center;}
+.svc-note{font-size:.78rem;color:var(--ink-faint);font-family:'IBM Plex Mono',monospace;}
+
 #revenue{background:var(--paper3);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);}
 .ledger-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;border:1px solid var(--line);}
 .ledger-cell{padding:1.8rem 1.5rem;border-right:1px solid var(--line);position:relative;}
@@ -133,7 +136,6 @@ nav{position:fixed;top:0;width:100%;z-index:500;background:var(--paper3);border-
 .lg-desc{font-size:.8rem;color:var(--ink-soft);margin-bottom:.7rem;}
 .lg-tag{font-size:.68rem;font-weight:700;color:var(--stamp);letter-spacing:.03em;}
 
-/* RECEIPTS (PAYMENT) */
 .receipt-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.4rem;}
 .receipt{background:var(--paper3);border:1.5px solid var(--ink);position:relative;overflow:hidden;transition:.3s;}
 .receipt:hover{transform:translateY(-4px);}
@@ -148,7 +150,6 @@ nav{position:fixed;top:0;width:100%;z-index:500;background:var(--paper3);border-
 .paid-stamp{position:absolute;top:1.1rem;right:1rem;border:3px solid var(--ledger);color:var(--ledger);font-family:'Archivo Black',sans-serif;font-size:.68rem;padding:.15rem .5rem;transform:rotate(10deg);letter-spacing:.05em;opacity:.85;}
 .rc-bottom{padding:.9rem 1.3rem 1.2rem;display:flex;justify-content:space-between;font-size:.72rem;color:var(--ink-faint);font-family:'IBM Plex Mono',monospace;}
 
-/* DECLARATIONS (REVIEWS) */
 .decl-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.4rem;}
 .decl{background:var(--paper3);border:1.5px solid var(--ink);padding:1.7rem;position:relative;transition:.3s;}
 .decl:hover{border-color:var(--stamp);}
@@ -160,11 +161,11 @@ nav{position:fixed;top:0;width:100%;z-index:500;background:var(--paper3);border-
 .dw-loc{font-size:.72rem;color:var(--ink-faint);}
 .dw-stars{font-size:.7rem;color:var(--stamp);letter-spacing:.1em;margin-bottom:.15rem;}
 
-/* MANIFEST (SKILLS) */
 #skills{background:var(--paper3);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);}
-.man-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0;border:1px solid var(--ink);}
+.man-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0;border:1px solid var(--ink);}
 .man-col{padding:1.8rem;border-right:1px solid var(--ink);}
 .man-col:last-child{border-right:none;}
+.man-col.feat{background:var(--paper2);}
 .man-cat{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--stamp);font-weight:700;margin-bottom:1.3rem;padding-bottom:.6rem;border-bottom:1px solid var(--line);}
 .man-item{margin-bottom:1.05rem;}
 .man-row{display:flex;justify-content:space-between;margin-bottom:.4rem;font-size:.83rem;}
@@ -173,7 +174,6 @@ nav{position:fixed;top:0;width:100%;z-index:500;background:var(--paper3);border-
 .man-bar{background:var(--line-soft);height:8px;border:1px solid var(--ink-faint);}
 .man-fill{height:100%;background:repeating-linear-gradient(135deg,var(--ledger),var(--ledger) 4px,#3d6b4a 4px,#3d6b4a 8px);width:0;transition:width 1.4s cubic-bezier(.4,0,.2,1);}
 
-/* ROUTE (EXPERIENCE) */
 .route-line{position:relative;padding-left:2rem;}
 .route-line::before{content:'';position:absolute;left:6px;top:8px;bottom:8px;width:2px;background:var(--line);}
 .stop{position:relative;padding-bottom:2.4rem;}
@@ -187,7 +187,6 @@ nav{position:fixed;top:0;width:100%;z-index:500;background:var(--paper3);border-
 .stop-ul li{font-size:.83rem;color:var(--ink-soft);padding:.25rem 0 .25rem 1.1rem;position:relative;line-height:1.6;}
 .stop-ul li::before{content:'—';position:absolute;left:0;color:var(--stamp);}
 
-/* POSTCARD (HEART) */
 #heart{text-align:center;}
 .postcard{max-width:640px;margin:2.4rem auto 0;background:var(--paper3);border:1.5px solid var(--ink);padding:3rem 2.6rem;position:relative;text-align:left;}
 .postcard::before{content:'✎';position:absolute;top:-18px;left:2.6rem;background:var(--paper);font-size:1.3rem;padding:0 .4rem;color:var(--stamp);}
@@ -195,7 +194,6 @@ nav{position:fixed;top:0;width:100%;z-index:500;background:var(--paper3);border-
 .pc-text strong{color:var(--ink);font-style:normal;font-weight:700;}
 .pc-sign{margin-top:1.4rem;font-family:'Archivo Black',sans-serif;font-size:1.1rem;text-align:right;}
 
-/* SHIP IT (CONTACT) */
 .ship-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:stretch;}
 .detail-list{display:flex;flex-direction:column;gap:0;border:1.5px solid var(--ink);}
 .detail{padding:1.1rem 1.3rem;display:flex;align-items:center;gap:1rem;border-bottom:1px dashed var(--line);transition:.25s;}
@@ -215,7 +213,6 @@ footer{padding:2.2rem 1.75rem;text-align:center;border-top:2px solid var(--ink);
 .back-top{display:inline-flex;align-items:center;gap:.4rem;color:var(--ink-soft);font-size:.74rem;margin-top:.7rem;cursor:pointer;background:none;border:none;font-family:'IBM Plex Mono',monospace;}
 .back-top:hover{color:var(--stamp);}
 
-/* REVEAL */
 .rv{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease;}
 .rv.on{opacity:1;transform:none;}
 .d1{transition-delay:.08s!important;}.d2{transition-delay:.16s!important;}.d3{transition-delay:.24s!important;}.d4{transition-delay:.32s!important;}
@@ -243,6 +240,7 @@ footer{padding:2.2rem 1.75rem;text-align:center;border-top:2px solid var(--ink);
   <div class="nav-inner">
     <div class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'})">IMRAN HAIDER</div>
     <ul class="nav-links">
+      <li><a href="#webdev">Web Dev</a></li>
       <li><a href="#revenue">Revenue</a></li>
       <li><a href="#payment">Receipts</a></li>
       <li><a href="#reviews">Reviews</a></li>
@@ -254,7 +252,6 @@ footer{padding:2.2rem 1.75rem;text-align:center;border-top:2px solid var(--ink);
   </div>
 </nav>
 
-<!-- HERO -->
 <section id="hero">
   <div class="label-card rv">
     <div class="label-top">
@@ -291,10 +288,11 @@ footer{padding:2.2rem 1.75rem;text-align:center;border-top:2px solid var(--ink);
         <h1 class="hero-name">E-Commerce<br><em>Growth</em> Specialist</h1>
 
         <div class="contents-lbl mono">Contents Declared</div>
-        <div class="contents-val">Amazon FBA · Shopify Management · TikTok Ads · eBay &amp; Walmart</div>
+        <div class="contents-val"><b>Web Development</b> · Amazon FBA · Shopify Management · TikTok Ads · eBay &amp; Walmart</div>
 
         <div class="hero-btns">
           <a href="#contact" class="btn-stamp">Hire Me Now</a>
+          <a href="#webdev" class="btn-outline">Web Dev Services</a>
           <a href="#reviews" class="btn-outline">Read Declarations</a>
         </div>
       </div>
@@ -318,9 +316,9 @@ footer{padding:2.2rem 1.75rem;text-align:center;border-top:2px solid var(--ink);
   </div>
 </section>
 
-<!-- TICKER -->
 <div class="ticker-wrap">
   <div class="ticker" id="ticker">
+    <div class="ticker-item">💻 WEB DEVELOPER <b>WEBSITES &amp; STORES</b></div>
     <div class="ticker-item">📦 AMAZON FBA <b>EXPERT</b></div>
     <div class="ticker-item">30+ LISTINGS <b>OPTIMIZED</b></div>
     <div class="ticker-item">$12,400+ <b>MONTHLY REVENUE</b></div>
@@ -329,6 +327,7 @@ footer{padding:2.2rem 1.75rem;text-align:center;border-top:2px solid var(--ink);
     <div class="ticker-item">TIKTOK ADS <b>4.2x ROAS</b></div>
     <div class="ticker-item">EBAY &amp; WALMART <b>SPECIALIST</b></div>
     <div class="ticker-item">📍 BHALWAL, PK <b>→ GLOBAL REACH</b></div>
+    <div class="ticker-item">💻 WEB DEVELOPER <b>WEBSITES &amp; STORES</b></div>
     <div class="ticker-item">📦 AMAZON FBA <b>EXPERT</b></div>
     <div class="ticker-item">30+ LISTINGS <b>OPTIMIZED</b></div>
     <div class="ticker-item">$12,400+ <b>MONTHLY REVENUE</b></div>
@@ -340,7 +339,30 @@ footer{padding:2.2rem 1.75rem;text-align:center;border-top:2px solid var(--ink);
   </div>
 </div>
 
-<!-- LEDGER / REVENUE -->
+<!-- WEB DEVELOPMENT SERVICES (NEW) -->
+<section id="webdev" class="sec">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">Custom Orders</div>
+      <h2 class="sec-title">Web Development Services</h2>
+      <p class="sec-sub">I don't just sell on websites — I build them. Fast, mobile-friendly sites made to bring customers and sales.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc rv d1"><div class="svc-no">01</div><h3>Business Websites</h3><p>Clean, professional websites for local and international businesses — clear layout, strong first impression, easy to contact.</p></div>
+      <div class="svc rv d2"><div class="svc-no">02</div><h3>E-Commerce Stores</h3><p>Complete online store setup — products, collections, payments and apps — built to convert visitors into buyers.</p></div>
+      <div class="svc rv d3"><div class="svc-no">03</div><h3>Shopify Development</h3><p>Store design, theme customization and layout fixes so your Shopify store looks trusted and sells better.</p></div>
+      <div class="svc rv d1"><div class="svc-no">04</div><h3>Portfolio &amp; Landing Pages</h3><p>Personal portfolios and single-page landing sites for freelancers, agencies and campaigns.</p></div>
+      <div class="svc rv d2"><div class="svc-no">05</div><h3>Responsive &amp; Fast</h3><p>Every site is designed mobile-first and kept light, so it opens quickly on any phone or screen.</p></div>
+      <div class="svc rv d3"><div class="svc-no">06</div><h3>Redesign &amp; Fixes</h3><p>Old or broken website? I redesign, fix issues and update content so it works properly again.</p></div>
+    </div>
+    <div class="svc-cta rv">
+      <a href="#contact" class="btn-stamp">Get Your Website Built</a>
+      <a href="https://wa.me/923261241395" target="_blank" class="wa-a" style="margin-top:0;">WhatsApp Me</a>
+      <span class="svc-note">Live example: imranhaiderdigital.online</span>
+    </div>
+  </div>
+</section>
+
 <section id="revenue" class="sec">
   <div class="wrap">
     <div class="sec-head rv">
@@ -357,7 +379,6 @@ footer{padding:2.2rem 1.75rem;text-align:center;border-top:2px solid var(--ink);
   </div>
 </section>
 
-<!-- RECEIPTS / PAYMENT -->
 <section id="payment" class="sec">
   <div class="wrap">
     <div class="sec-head rv">
@@ -387,7 +408,6 @@ footer{padding:2.2rem 1.75rem;text-align:center;border-top:2px solid var(--ink);
   </div>
 </section>
 
-<!-- DECLARATIONS / REVIEWS -->
 <section id="reviews" class="sec">
   <div class="wrap">
     <div class="sec-head rv">
@@ -424,7 +444,6 @@ footer{padding:2.2rem 1.75rem;text-align:center;border-top:2px solid var(--ink);
   </div>
 </section>
 
-<!-- CARGO MANIFEST / SKILLS -->
 <section id="skills" class="sec">
   <div class="wrap">
     <div class="sec-head rv">
@@ -433,6 +452,14 @@ footer{padding:2.2rem 1.75rem;text-align:center;border-top:2px solid var(--ink);
       <p class="sec-sub">Core competencies, weighed and logged.</p>
     </div>
     <div class="man-grid rv">
+      <div class="man-col feat">
+        <div class="man-cat">Web Development</div>
+        <div class="man-item"><div class="man-row"><span class="man-name">HTML5 &amp; CSS3</span><span class="man-pct">92%</span></div><div class="man-bar"><div class="man-fill" data-w="92"></div></div></div>
+        <div class="man-item"><div class="man-row"><span class="man-name">JavaScript</span><span class="man-pct">80%</span></div><div class="man-bar"><div class="man-fill" data-w="80"></div></div></div>
+        <div class="man-item"><div class="man-row"><span class="man-name">Responsive / Mobile Design</span><span class="man-pct">93%</span></div><div class="man-bar"><div class="man-fill" data-w="93"></div></div></div>
+        <div class="man-item"><div class="man-row"><span class="man-name">Shopify Theme Customization</span><span class="man-pct">87%</span></div><div class="man-bar"><div class="man-fill" data-w="87"></div></div></div>
+        <div class="man-item"><div class="man-row"><span class="man-name">Website Speed &amp; SEO</span><span class="man-pct">85%</span></div><div class="man-bar"><div class="man-fill" data-w="85"></div></div></div>
+      </div>
       <div class="man-col">
         <div class="man-cat">Amazon FBA</div>
         <div class="man-item"><div class="man-row"><span class="man-name">Seller Central Management</span><span class="man-pct">92%</span></div><div class="man-bar"><div class="man-fill" data-w="92"></div></div></div>
@@ -458,15 +485,23 @@ footer{padding:2.2rem 1.75rem;text-align:center;border-top:2px solid var(--ink);
   </div>
 </section>
 
-<!-- ROUTE HISTORY / EXPERIENCE -->
 <section id="experience" class="sec">
   <div class="wrap">
     <div class="sec-head rv">
       <div class="eyebrow">Route History</div>
       <h2 class="sec-title">Experience</h2>
-      <p class="sec-sub">4 stops · 2+ years of dedication and results.</p>
+      <p class="sec-sub">5 stops · 2+ years of dedication and results.</p>
     </div>
     <div class="route-line rv">
+      <div class="stop"><div class="stop-card">
+        <div class="stop-title">Web Developer</div>
+        <div class="stop-meta">Freelance · Present <span class="stop-tag mono">Web Development</span></div>
+        <ul class="stop-ul">
+          <li>Design and build business websites, portfolios and landing pages for local and international clients</li>
+          <li>Develop and customize e-commerce stores with a mobile-first, fast-loading approach</li>
+          <li>Redesign and fix existing websites for better look, speed and conversions</li>
+        </ul>
+      </div></div>
       <div class="stop"><div class="stop-card">
         <div class="stop-title">E-Commerce Virtual Assistant</div>
         <div class="stop-meta">Freelance · 2023 – Present <span class="stop-tag mono">Amazon FBA</span></div>
@@ -508,25 +543,23 @@ footer{padding:2.2rem 1.75rem;text-align:center;border-top:2px solid var(--ink);
   </div>
 </section>
 
-<!-- POSTCARD / HEART -->
 <section id="heart" class="sec">
   <div class="wrap">
     <div class="sec-head rv"><div class="eyebrow" style="justify-content:center;">A Note, Handwritten</div></div>
     <div class="postcard rv">
-      <p class="pc-text">I am <strong>Imran Haider</strong> — a young man from <strong>Bhalwal, Pakistan</strong> with a laptop and a dream bigger than my city. E-commerce gave me wings to work with clients in the USA, UK, UAE, Canada and beyond.<br><br>
-      Every listing I optimize, every store I build, every campaign I run — I pour my heart into it. Behind every business is a person with a dream, just like me. When your store wins, <strong>we both win</strong>.</p>
+      <p class="pc-text">I am <strong>Imran Haider</strong> — a young man from <strong>Bhalwal, Pakistan</strong> with a laptop and a dream bigger than my city. E-commerce and <strong>web development</strong> gave me wings to work with clients in the USA, UK, UAE, Canada and beyond.<br><br>
+      Every listing I optimize, every website I build, every campaign I run — I pour my heart into it. Behind every business is a person with a dream, just like me. When your store wins, <strong>we both win</strong>.</p>
       <div class="pc-sign">— Imran</div>
     </div>
   </div>
 </section>
 
-<!-- SHIPPING DETAILS / CONTACT -->
 <section id="contact" class="sec">
   <div class="wrap">
     <div class="sec-head rv">
       <div class="eyebrow">Shipping Details</div>
       <h2 class="sec-title">Let's Grow Together</h2>
-      <p class="sec-sub">Ready to scale your store? I reply within 24 hours.</p>
+      <p class="sec-sub">Ready to scale your store or build your website? I reply within 24 hours.</p>
     </div>
     <div class="ship-grid">
       <div class="detail-list rv">
@@ -538,7 +571,7 @@ footer{padding:2.2rem 1.75rem;text-align:center;border-top:2px solid var(--ink);
       </div>
       <div class="shipbox rv">
         <h3>Ready to Scale Your Store?</h3>
-        <p>Amazon FBA · Shopify · TikTok Ads · eBay · Walmart — handled with precision and care.</p>
+        <p>Web Development · Amazon FBA · Shopify · TikTok Ads · eBay · Walmart — handled with precision and care.</p>
         <a href="mailto:imranking0804@gmail.com" class="btn-stamp">Send Me an Email</a><br>
         <a href="https://wa.me/923261241395" target="_blank" class="wa-a">WhatsApp Me Now</a>
         <p style="font-size:.72rem;color:var(--ink-faint);margin-top:1rem;margin-bottom:0;">References &amp; payment screenshots on request.</p>
@@ -549,7 +582,7 @@ footer{padding:2.2rem 1.75rem;text-align:center;border-top:2px solid var(--ink);
 
 <footer>
   <div class="ft-mark">IMRAN HAIDER</div>
-  <p class="ft-sub">Amazon &amp; Shopify E-Commerce Specialist · Bhalwal, Pakistan</p>
+  <p class="ft-sub">Web Developer &amp; E-Commerce Specialist · Bhalwal, Pakistan</p>
   <p class="ft-sub" style="margin-top:.3rem;">© 2025 All Rights Reserved</p>
   <button class="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Back to Top</button>
 </footer>
@@ -563,7 +596,7 @@ footer{padding:2.2rem 1.75rem;text-align:center;border-top:2px solid var(--ink);
 window.addEventListener('scroll',()=>{
   const pct=(window.scrollY/(document.body.scrollHeight-window.innerHeight))*100;
   document.getElementById('progress').style.width=pct+'%';
-  const secs=['revenue','payment','reviews','skills','experience','contact'];
+  const secs=['webdev','revenue','payment','reviews','skills','experience','contact'];
   secs.forEach(id=>{
     const el=document.getElementById(id);
     if(!el)return;
